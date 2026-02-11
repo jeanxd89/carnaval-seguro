@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Jogo da Memória - Carnaval Seguro</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnaval Seguro - Jogo da Memória</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🎭 Carnaval Seguro 🎭</h1>
-    <p>Encontre os pares com dicas para curtir o carnaval com segurança!</p>
+<h1>🎭 Carnaval Seguro 🎭</h1>
 
-    <div class="game-board" id="gameBoard"></div>
+<div class="info">
+    <div>⏱️ Tempo: <span id="timer">0</span>s</div>
+    <div>🏆 Pontos: <span id="score">0</span></div>
+</div>
 
-    <button onclick="restartGame()">Reiniciar Jogo</button>
+<div class="game-board" id="gameBoard"></div>
 
-    <script src="script.js"></script>
+<button onclick="restartGame()">🔄 Reiniciar</button>
+
+<div class="victory" id="victoryMessage">
+    🎉 Parabéns! Você venceu! 🎉
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
 
